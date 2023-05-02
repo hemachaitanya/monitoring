@@ -1,12 +1,14 @@
-
-            MONITORING
+ MONITORING
 
 (checking our services is working or not )getting o know about the problems
 * now lets try to figure out any failure
     * network failure
     * harware "
     * application "
+
 ![hema](./1.png)
+
+
  suppose you are assigned to figure out failures . to slove the issues we wil figureout a proactive approach
     for every one min.
     check if every server is responding or not
