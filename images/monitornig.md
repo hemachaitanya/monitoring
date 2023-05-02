@@ -38,4 +38,4 @@ METRICS:
   * for example we can the qtinfo s/m need to monitoring the solutions we need to get (logs , metric, trace)
   * MTTR: mean time to recover(avarage time taken by ur organization to       recover from failures)
   * MTTF: meantime to fail (avg time during the certain toget an failure in ur s/m)
-
+    * SLA: service level agriment(this is an agriment b/w service provider and customer w.r.t  availability and other importent metricks)
