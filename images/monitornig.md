@@ -6,7 +6,7 @@
     * harware "
     * application "
 
-![hema](./1.png)
+![preview]()
 
 
  suppose you are assigned to figure out failures . to slove the issues we wil figureout a proactive approach
@@ -41,3 +41,10 @@ METRICS:
   * MTTR: mean time to recover(avarage time taken by ur organization to       recover from failures)
   * MTTF: meantime to fail (avg time during the certain toget an failure in ur s/m)
     * SLA: service level agriment(this is an agriment b/w service provider and customer w.r.t  availability and other importent metricks)
+  
+  . monitoring are two types 
+      1. wight box monitoring
+      2. block box monitoring
+
+![preview](./2.png)
+
