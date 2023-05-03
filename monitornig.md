@@ -88,5 +88,8 @@ monitoring are basically depends two types of data
       system
       applications
   2.text/data (ex: why our system going solw performance)
-  
+
+Dashboard: complete application in one space
+elastic strag: present every where
+
 
