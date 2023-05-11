@@ -94,7 +94,7 @@ elastic strag: present every where
 
  monitorning/ obsorvability: 
 
-####  Monitor typesedit
+####  Monitor types edit
 You can configure Heartbeat to use the following monitor types:
 
 #### icmp
