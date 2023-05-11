@@ -92,4 +92,21 @@ monitoring are basically depends two types of data
 Dashboard: complete application in one space
 elastic strag: present every where
 
+ monitorning/ obsorvability: 
+
+####  Monitor typesedit
+You can configure Heartbeat to use the following monitor types:
+
+#### icmp
+Uses an ICMP (v4 and v6) Echo Request to ping the configured hosts. Requires special permissions or root access.
+#### tcp
+Connects via TCP and optionally verifies the endpoint by sending and/or receiving a custom payload.
+#### http
+Connects via HTTP and optionally verifies that the host returns the expected response. Will use Elastic-Heartbeat as the user agent product.
+browser
+Allows users to run the synthetic monitoring tests via Synthetic Agent on the Chromium browser.
+The tcp and http monitor types both support SSL/TLS and some proxy settings.
+
+ 
+
 
