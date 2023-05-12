@@ -6,7 +6,7 @@
     * harware "
     * application "
 
-![haem](./IMAGES/1.png)
+![haem][def]
 
 
  suppose you are assigned to figure out failures . to slove the issues we wil figureout a proactive approach
@@ -110,3 +110,6 @@ The tcp and http monitor types both support SSL/TLS and some proxy settings.
  
 
 
+
+
+[def]: ./IMAGES/1.png
