@@ -6,7 +6,7 @@
     * harware "
     * application "
 
-![preview](./Images/1.png)
+![haem](./IMAGES/1.png)
 
 
  suppose you are assigned to figure out failures . to slove the issues we wil figureout a proactive approach
@@ -46,7 +46,7 @@ METRICS:
       1. wight box monitoring
       2. block box monitoring
 
-![preview](./Images/2.png)
+![monitor](./IMAGES/2.png)
 
 (Request) Rate - the number of requests, per second, you services are serving.
 (Request) Errors - the number of failed requests per second.
@@ -76,7 +76,7 @@ database: to store the information >> memory files >> RAM
 
 tread:
 
-![images](./Images/3.png)
+![hema](./IMAGES/3.png)
 
 thread create adresses limit to acces user to applications 
 treads also get a memory major preriy is CPU
