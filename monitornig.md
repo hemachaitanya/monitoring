@@ -6,7 +6,7 @@
     * harware "
     * application "
 
-![haem][def]
+![haem](./IMAGES/1.png)
 
 
  suppose you are assigned to figure out failures . to slove the issues we wil figureout a proactive approach
