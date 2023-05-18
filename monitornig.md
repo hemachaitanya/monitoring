@@ -124,7 +124,7 @@ The tcp and http monitor types both support SSL/TLS and some proxy settings.
   
   * transform(filter pluggins): its not mandatory
 
-  * stdout: inthese section we load  output pluggins
+  * stdout: inthese section we load  output pluggins (normal msg printing also its gives meaningful msg)
 
   * ealstic search: stores the output data
 
@@ -164,6 +164,7 @@ log stash life cycle
 
 * first we create one ec2 t2.small instance .
 * then install logstash
+
       wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elastic-keyring.gpg
 
       sudo apt-get install apt-transport-https
@@ -178,7 +179,7 @@ log stash life cycle
 
 * vi /tmp/first.conf
 
-'''
+---
 input {
     stdin {
     }
@@ -187,11 +188,13 @@ output {
     stdout {
     }
 }
-'''
+---
 * cd /usr/share/logstash
 * sudo ./bin/logstash -f /tmp/first.conf
 
 ![image](./IMAGES/5.png)
+
+
 
 
 
