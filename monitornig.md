@@ -179,7 +179,7 @@ log stash life cycle
 
 * vi /tmp/first.conf
 
----
+```
 input {
     stdin {
     }
@@ -188,7 +188,7 @@ output {
     stdout {
     }
 }
----
+```
 * cd /usr/share/logstash
 * sudo ./bin/logstash -f /tmp/first.conf
 
