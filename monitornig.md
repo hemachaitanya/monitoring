@@ -113,3 +113,87 @@ The tcp and http monitor types both support SSL/TLS and some proxy settings.
 
 
 [def]: ./IMAGES/1.png
+
+
+
+
+[refer-input](https://www.elastic.co/guide/en/logstash/current/input-plugins.html)
+
+  * stdin: inthese section we can define the data sources from where we process input 
+
+  
+  * transform(filter pluggins): its not mandatory
+
+  * stdout: inthese section we load  output pluggins
+
+  * ealstic search: stores the output data
+
+### Log Analysis
+
+Every logging mechanism will have levels, most widely adopted levels are
+
+* INFO: This is informational log
+* DEBUG: This is informative log
+* ERROR: This represents errors
+* CRITICAL/FATAL: This represents serious system failures
+
+* Logs are time based information.
+* In Elastic Stack we have logstash which can extract the logs, transform and load into elastic search for querying/visualizations
+
+### four golden signal: are latency,traffic,errors and saturation
+
+* error series 5: server problem(http 500 error indicates a failed request , and your overall latency maight be result in misleading calculations)
+
+* error series 4(traffic) : user mistakes
+* 2 (error):  wrong content
+* 1(saturation): utilization target is essential
+
+### log stash:
+  * we get more errors is called log stash
+log stash life cycle
+![image](./IMAGES/4.png)
+ * filebeat to elastic search(means log fixed in one line) to elastic cloud
+
+ * 
+### filebeat:
+  * send any file and read this file and get output 
+
+### (1)  run logstash pipeline
+*  write pipeline by using pluggins terms is
+
+
+* first we create one ec2 t2.small instance .
+* then install logstash
+      wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elastic-keyring.gpg
+
+      sudo apt-get install apt-transport-https
+
+      echo "deb [signed-by=/usr/share/keyrings/elastic-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-8.x.list
+
+      sudo apt-get update && sudo apt-get install logstash
+
+      sudo systemctl start logstash.service
+
+[referhear-to-installing-logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html#_apt)
+
+* vi /tmp/first.conf
+
+'''
+input {
+    stdin {
+    }
+}
+output {
+    stdout {
+    }
+}
+'''
+* cd /usr/share/logstash
+* sudo ./bin/logstash -f /tmp/first.conf
+
+![image](./IMAGES/5.png)
+
+
+
+
+
