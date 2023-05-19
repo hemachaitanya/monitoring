@@ -6,7 +6,7 @@
     * harware "
     * application "
 
-![haem](./IMAGES/1.png)
+![haem](./Images/1.png)
 
 
  suppose you are assigned to figure out failures . to slove the issues we wil figureout a proactive approach
@@ -46,7 +46,7 @@ METRICS:
       1. wight box monitoring
       2. block box monitoring
 
-![monitor](./IMAGES/2.png)
+![monitor](./Images/2.png)
 
 (Request) Rate - the number of requests, per second, you services are serving.
 (Request) Errors - the number of failed requests per second.
@@ -76,7 +76,7 @@ database: to store the information >> memory files >> RAM
 
 tread:
 
-![hema](./IMAGES/3.png)
+![hema](./Images/3.png)
 
 thread create adresses limit to acces user to applications 
 treads also get a memory major preriy is CPU
@@ -105,16 +105,9 @@ Connects via TCP and optionally verifies the endpoint by sending and/or receivin
 Connects via HTTP and optionally verifies that the host returns the expected response. Will use Elastic-Heartbeat as the user agent product.
 browser
 Allows users to run the synthetic monitoring tests via Synthetic Agent on the Chromium browser.
-The tcp and http monitor types both support SSL/TLS and some proxy settings.
+The tcp and http monitor types both support SSL/TLS and some proxy settings
 
- 
-
-
-
-
-[def]: ./IMAGES/1.png
-
-
+![images](./Images/4.png)
 
 
 [refer-input](https://www.elastic.co/guide/en/logstash/current/input-plugins.html)
@@ -151,7 +144,9 @@ Every logging mechanism will have levels, most widely adopted levels are
 ### log stash:
   * we get more errors is called log stash
 log stash life cycle
-![image](./IMAGES/4.png)
+
+![Image](./Images/4.png)
+
  * filebeat to elastic search(means log fixed in one line) to elastic cloud
 
  * 
@@ -192,7 +187,51 @@ output {
 * cd /usr/share/logstash
 * sudo ./bin/logstash -f /tmp/first.conf
 
-![image](./IMAGES/5.png)
+![preview](./Images/5.png)
+
+### beats: heart beat :  metric beat ; filebate
+
+### heart beat:
+ its checkes only application are alive or not
+
+ ### metric beat: 
+ its gives an information to usage space(cpu,memory,harddisk ...)
+
+ ### file beat:
+ application down then container down then pod is down at that time total logfiles are deleted
+ so we check in kibana s/w to check whats the eeror
+
+ in logstash file we have (info;error;warning ..... )
+
+* in all 200 success code ; 400 bad request ; 500 server problem its very dangirous
+
+### (2) how to check logstash for apache2 service
+
+* create one vm
+* install logstash and apache2
+* write pipe line on this path `/tmp/file.conf`
+* then run commnd 
+        `sudo ./tmp/logstash -f /tmp/file.conf`
+* at stop proces we type one msg to configure that env variable
+* pipeline will be visable
+```
+input {
+    file {
+        path => ["/var/log/apache2/access.log"]
+    }
+}
+output {
+    stdout {
+
+    }
+}
+``` 
+go to `/var/log/apache2/access.log` this path apache page logs are visabled
+
+![Images](./Images/6.png)
+
+* these log information will take 
+
 
 
 
