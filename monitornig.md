@@ -46,7 +46,7 @@ METRICS:
       1. wight box monitoring
       2. block box monitoring
 
-![monitor](./Images/2.png)
+![hema](./images/2.png)
 
 (Request) Rate - the number of requests, per second, you services are serving.
 (Request) Errors - the number of failed requests per second.
@@ -76,7 +76,7 @@ database: to store the information >> memory files >> RAM
 
 tread:
 
-![hema](./Images/3.png)
+![hema](./images/3.png)
 
 thread create adresses limit to acces user to applications 
 treads also get a memory major preriy is CPU
@@ -107,7 +107,7 @@ browser
 Allows users to run the synthetic monitoring tests via Synthetic Agent on the Chromium browser.
 The tcp and http monitor types both support SSL/TLS and some proxy settings
 
-![images](./Images/4.png)
+![images](./images/4.png)
 
 
 [refer-input](https://www.elastic.co/guide/en/logstash/current/input-plugins.html)
@@ -140,12 +140,16 @@ Every logging mechanism will have levels, most widely adopted levels are
 * error series 4(traffic) : user mistakes
 * 2 (error):  wrong content
 * 1(saturation): utilization target is essential
-
+* 100 - info errors
+* 200 - sucsess
+* 300 - redirecton
+* 400 - client side 
+* 500 - server side 
 ### log stash:
   * we get more errors is called log stash
 log stash life cycle
 
-![Image](./Images/4.png)
+![Image](./images/4.png)
 
  * filebeat to elastic search(means log fixed in one line) to elastic cloud
 
@@ -187,7 +191,7 @@ output {
 * cd /usr/share/logstash
 * sudo ./bin/logstash -f /tmp/first.conf
 
-![preview](./Images/5.png)
+![preview](./images/5.png)
 
 ### beats: heart beat :  metric beat ; filebate
 
@@ -228,7 +232,7 @@ output {
 ``` 
 go to `/var/log/apache2/access.log` this path apache page logs are visabled
 
-![Images](./Images/6.png)
+![Images](./images/6.png)
 
 * these log information will take 
 
